@@ -11,7 +11,11 @@ const ControlComponent = ({
     bindControl: any;
 }) => {
     const element = useRef<HTMLDivElement>(null);
-    useEffect(() => void element.current ?? bindControl(element.current, control), [ element ]);
+    useEffect(() => {
+        if (element.current) {
+            bindControl(element.current, control);
+        }
+    }, [ element ]);
 
     return (
         <div
