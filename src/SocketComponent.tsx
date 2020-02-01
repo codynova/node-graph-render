@@ -15,7 +15,7 @@ const SocketComponent = ({
 }) => {
     const { name } = socket;
     const element = useRef<HTMLDivElement>(null);
-    useEffect(() => element.current ?? bindSocket(element, type, io), []);
+    useEffect(() => void element.current ?? bindSocket(element, type, io), []);
 
     return (
         <div
