@@ -49,3 +49,8 @@ const install = (editor: NodeEditor, { component: nodeComponent = NodeComponent 
 
     editor.on('nodeselected', () => editor.nodes.forEach(node => node.update()));
 }
+
+export default {
+    name: 'react-render',
+    install,
+};

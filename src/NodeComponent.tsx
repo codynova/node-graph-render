@@ -50,7 +50,7 @@ const NodeComponent = ({
                         type="output"
                         socket={output.socket}
                         io={output}
-                        innerRef={bindSocket}
+                        bindSocket={bindSocket}
                     />
                 </div>
             ))}
@@ -59,7 +59,7 @@ const NodeComponent = ({
                     key={control.key}
                     control={control}
                     className="control"
-                    innerRef={bindControl}
+                    bindControl={bindControl}
                 />
             ))}
             {inputs.map(input => (
@@ -71,13 +71,13 @@ const NodeComponent = ({
                         type="input"
                         socket={input.socket}
                         io={input}
-                        innerRef={bindSocket}
+                        bindSocket={bindSocket}
                     />
                     {input.showControl() ? (
                         <ControlComponent
                             control={input.control!}
                             className="input-control"
-                            innerRef={bindControl}
+                            bindControl={bindControl}
                         />
                     ) : (
                         <div className="input-title">
