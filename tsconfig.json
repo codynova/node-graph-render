@@ -1,29 +1,12 @@
 {
 	"compilerOptions": {
-		"target": "es5",
+		"target": "es6",
 		"module": "commonjs",
-		"lib": [
-			"dom",
-			"esnext"
-		],
+		"lib": [ "dom", "esnext" ],
 		"jsx": "react",
 		"baseUrl": "./src",
-		"paths": {
-			"Actions": [ "actions" ],
-			"Assets": [ "assets" ],
-			"Constants": [ "constants" ],
-			"Contexts": [ "contexts" ],
-			"Components": [ "components" ],
-			"Data": [ "data" ],
-			"Debug": [ "debug" ],
-			"Hooks": [ "hooks" ],
-			"Primitives": [ "primitives" ],
-			"Routes": [ "routes" ],
-			"Services": [ "services" ],
-			"Shaders": [ "shaders" ],
-			"Styles": [ "styles" ],
-			"Types": [ "types" ]
-		},
+		"outDir": "./dist",
+		"declaration": true,
 		"allowJs": true,
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
