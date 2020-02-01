@@ -2,8 +2,7 @@
 	"name": "node-graph-render",
 	"version": "0.0.1",
 	"description": "React renderer for visual programming node-graph-editor",
-	"main": "bundle.js",
-	"private": true,
+	"main": "dist/index.js",
 	"scripts": {
 		"start": "npm run dev",
 		"clean": "rimraf dist/",
