@@ -1,6 +1,6 @@
 {
 	"name": "node-graph-render",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "React renderer for visual programming node-graph-editor",
 	"main": "dist/index.js",
 	"scripts": {
